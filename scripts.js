@@ -1,3 +1,13 @@
+// Initialize Firebase
+var config = {
+  apiKey: "AIzaSyAU8lvzdRC5QA_CzCaB2NdpSs8kWAOWRyQ",
+  authDomain: "muachile-81afe.firebaseapp.com",
+  databaseURL: "https://muachile-81afe.firebaseio.com",
+  projectId: "muachile-81afe",
+  storageBucket: "muachile-81afe.appspot.com",
+  messagingSenderId: "157612617310"
+};
+firebase.initializeApp(config);
 
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
@@ -11,26 +21,16 @@ firebase.auth().onAuthStateChanged(function(user) {
   }
 });
 
-/*function validate (input) {
-  if($(input).attr('type') == 'correoElectronico' || $(input).attr('contrasena') == 'correoElectronico') {
-    if($(input).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
-      return false;
-    }
-  } else {
-    if($(input).val().trim() == ''){
-      return false;
-    }
-  }
-}*/
-
 function login () {
   var correo = document.getElementById("correoElectronico").value;
   var contrasena = document.getElementById("contrasena").value;
 
-  /*firebase.auth().createUserWithEmailAndPassword(correo, contrasena).catch(function(error) {
+  // Ya estan creados los Usuarios (via la Consola de Firebase)
+  // Docuementacion: https://firebase.google.com/docs/reference/js/firebase.auth.Auth#signInWithEmailAndPassword
+  firebase.auth().signInWithEmailAndPassword(correo, contrasena).catch(function(error) {
     // Handle Errors here.
     var errorCode = error.code;
     var errorMessage = error.message;
     window.alert("Error : " errorMessage);
-  });*/
+  });
 }
