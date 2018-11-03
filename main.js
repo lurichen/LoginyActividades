@@ -14,7 +14,7 @@ $(document).ready(function(){
 
     $('.btn-menu').click(function() {
       $('.contenedor .menu .menu').slidetoggle();
-      $('.btn-menu').menu.menu; // Que pasa aqui ???
+      //$('.btn-menu').menu.menu; // Que pasa aqui ???
     });
 
     $(window).resize(function() {
@@ -28,6 +28,7 @@ $(document).ready(function(){
         $('.menu li').removeclass('activado');
       }
     });
+
   });
 
   /*function validate (input) {
