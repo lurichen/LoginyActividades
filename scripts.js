@@ -11,6 +11,7 @@ firebase.initializeApp(config);
 
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
+    console.log( user.email );
     //User signed in.
     document.getElementById("appLogin").style.display = "none";
     document.getElementById("appActividades").style.display = "block";
@@ -31,6 +32,7 @@ function login () {
     // Handle Errors here.
     var errorCode = error.code;
     var errorMessage = error.message;
-    window.alert("Error : " errorMessage);
+
+    window.alert("Error : " + errorMessage);
   });
 }
