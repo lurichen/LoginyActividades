@@ -1,113 +1,90 @@
 <!Doctype html>
-<html lang="es">
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>MUA Actividades</title>
-	<link href="https://fonts.google.com" rel="stylesheet">
-	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="estilos.css">
-	
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>MUA Actividades</title>
+  <link href="https://fonts.google.com" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="estilos.css">
 </head>
 <body>
-
 <div id="appLogin">
   <div class="muaImagen">
     <!--<img src="original.jpg"-->
-      <div id="login_form" class="loginBox">
-        <h1>Una mujer a la vez...</h1>
-          <h2>Mujeres Unidas y Activas</h2>
-              <input type="text" name="Correo electronico" id="correoElectronico" placeholder="&#128231; @mujeresunidas.net" style="height:50px; width:200px"><br>
-              <input type="password" name="Contrasena" id="contrasena" placeholder="&#128272; contrasena" style="height:50px; width:200px"><br>
-            
-              <button onclick="login()" class="iniciar" target="_self"><span>Iniciar </span></button>
-        </div>
+    <div id="login_form" class="loginBox">
+      <h1>Una mujer a la vez...</h1>
+      <h2>Mujeres Unidas y Activas</h2>
+      <input type="text" name="Correo electronico" id="correoElectronico" placeholder="&#128231; @mujeresunidas.net" style="height:50px; width:200px"><br>
+      <input type="password" name="Contrasena" id="contrasena" placeholder="&#128272; contrasena" style="height:50px; width:200px"><br>
+      <button onclick="login()" class="iniciar" target="_self"><span>Iniciar </span></button>
     </div>
+  </div>
 </div>
 
-  <div id="appActividades">
-   
-     <div class="contenedor-menu">
-     	<a href="#" class="btn-menu">Menu<i class="icono fa fa-bars"></i></a>
+<div id="appActividades">
+  <div class="contenedor-menu">
+    <a href="#" class="btn-menu">Menu<i class="icono fa fa-bars"></i></a>
+    <ul class="menu">
+      <li><a href="#"><i class="icono izquierdo fa fa-home"> </i>MUA Actividades</a><i class="icono derecho fa fa-chevron-down"></i></li>
+      <li><a href="#"><i class="icono izquierdo fa fa-coffee"></i>Reuniones Generales</a><i class="icono derecho fa fa-chevron-down"></i></li>
+      <ul>
+        <li><a href="#">San Francisco</a></li>
+        <li><a href="#">Oakland</a></li>
+        <li><a href="#">Union City</a></li>
+      </ul>
+      <li><a href="#"><i class=" icono izquierdo fa fa-comments aria-hidden true"></i>Comites</a><i class="icono derecho fa fa-chevron-down"></i></li>
+      <ul>
+        <li><a href="#">Raices</a></li>
+        <li><a href="#">Consejeras y Facilitadoras</a></li>
+        <li><a href="#">Asalto Sexual</a></li>
+        <li><a href="#">Recaudacion</a></li>
+      </ul>
+      <li><a href="#"><i class="icono izquierdo fa fa-briefcase"></i>Talleres</a><i class="icono derecho fa fa-chevron-down"></i></li>
+      <ul>
+        <li><a href="#">Conozca sus Derechos</a></li>
+        <li><a href="#">Negociacion de Salario y Contratos TH</a></li>
+        <li><a href="#">Mitos y Realidades de AS</a></li>
+        <li><a href="#">Impacto de VD en los niños</a></li>
+        <li><a href="#">Universidad MUA</a></li>
+        <li><a href="#">Recaudacion de fondos</a></li>
+      </ul>
+      <li><a href="#"><i class="icono izquierdo fa fa-graduation-cap"></i>Entrenamientos</a><i class="icono derecho fa fa-chevron-down"></i></li>
+      <ul>
+        <li><a href="#">Liderazgo</a></li>
+        <li><a href="#">Consejeras de VD</a></li>
+        <li><a href="#">facilitadoras</a></li>
+        <li><a href="#">Consejeras de AS</a></li>
+        <li><a href="#">Recaudacion de fondos</a></li>
+      </ul>
+      <li><a href="#"><i class="icono izquierdo fa fa-handshake-o"></i>Alcance</a><i class="icono derecho fa fa-chevron-down"></i></li>
+      <ul>
+        <li><a href="#">Conozca sus Derechos</a></li>
+        <li><a href="#">Asalto Sexual</a></li>
+        <li><a href="#">Violencia Domestica</a></li>
+        <li><a href="#">Trabajadoras del Hogar</a></li>
+        <li><a href="#">Acceso Linguistico</a></li>
+      </ul>
+      <li><a href="#"><i class="icono izquierdo fa fa-book"></i>Clase de Ingles</a><i class="icono derecho fa fa-chevron-down"></i></li>
+      <ul>
+        <li><a href="#">San Francisco</a></li>
+        <li><a href="#">Oakland</a></li>
+        <li><a href="#">Union City</a></li>
+      </ul>
+      <li><a href="#"><i class="icono izquierdo fa fa-bullhorn"></i>Presentaciones</a><i class="icono derecho fa fa-chevron-down"></i></li>
+      <ul>
+        <li><a href="#">Mesas de informacion</a></li>
+        <li><a href="#">Consulados</a></li>
+        <li><a href="#">Escuelas</a></li>
+        <li><a href="#">Agencias</a></li>
+      </ul>
+      <li><a href="#"><i class="icono izquierdo fa fa-address-book"></i>Pasar a Contactos</a></li>
+    </ul>
+  </div>
+</div>
 
-      <ul class="menu"> 
-           <li><a href="#"><i class="icono izquierdo fa fa-home"> </i>MUA Actividades</a><i class="icono derecho fa fa-chevron-down"></i></li>
-         
-          <li><a href="#"><i class="icono izquierdo fa fa-coffee"></i>Reuniones Generales</a><i class="icono derecho fa fa-chevron-down"></i></li> 
-          
-              <ul>
-                <li><a href="#">San Francisco</a></li>
-                <li><a href="#">Oakland</a></li>
-                <li><a href="#">Union City</a></li> 
-               </ul>
-
-         <li><a href="#"><i class=" icono izquierdo fa fa-comments aria-hidden true"></i>Comites</a><i class="icono derecho fa fa-chevron-down"></i></li>
-           
-              <ul> 
-                <li><a href="#">Raices</a></li>
-                <li><a href="#">Consejeras y Facilitadoras</a></li>
-                <li><a href="#">Asalto Sexual</a></li>
-                <li><a href="#">Recaudacion</a></li>
-              </ul>
-
-         <li><a href="#"><i class="icono izquierdo fa fa-briefcase"></i>Talleres</a><i class="icono derecho fa fa-chevron-down"></i></li>
-            
-              <ul>
-                <li><a href="#">Conozca sus Derechos</a></li>
-                <li><a href="#">Negociacion de Salario y Contratos TH</a></li>
-                <li><a href="#">Mitos y Realidades de AS</a></li>
-                <li><a href="#">Impacto de VD en los niños</a></li>            
-                <li><a href="#">Universidad MUA</a></li>
-                <li><a href="#">Recaudacion de fondos</a></li>
-              </ul>
-          
-                 <li><a href="#"><i class="icono izquierdo fa fa-graduation-cap"></i>Entrenamientos</a><i class="icono derecho fa fa-chevron-down"></i></li>
-             
-              <ul>
-                <li><a href="#">Liderazgo</a></li>
-                <li><a href="#">Consejeras de VD</a></li>
-                <li><a href="#">facilitadoras</a></li>
-                <li><a href="#">Consejeras de AS  </a></li>            
-                <li><a href="#">Recaudacion de fondos</a></li>
-              </ul>
-
-           <li><a href="#"><i class="icono izquierdo fa fa-handshake-o"></i>Alcance</a><i class="icono derecho fa fa-chevron-down"></i></li>
-             
-              <ul>
-                <li><a href="#">Conozca sus Derechos</a></li>
-                <li><a href="#">Asalto Sexual</a></li>
-                <li><a href="#">Violencia Domestica</a></li>
-                <li><a href="#">Trabajadoras del Hogar  </a></li>            
-                <li><a href="#">Acceso Linguistico</a></li>
-              </ul>
-
-         <li><a href="#"><i class="icono izquierdo fa fa-book"></i>Clase de Ingles</a><i class="icono derecho fa fa-chevron-down"></i></li>
-            
-              <ul>
-                <li><a href="#">San Francisco</a></li>
-                <li><a href="#">Oakland</a></li>
-                <li><a href="#">Union City</a></li>
-              </ul>
-         
-         <li><a href="#"><i class="icono izquierdo fa fa-bullhorn"></i>Presentaciones</a><i class="icono derecho fa fa-chevron-down"></i></li>
-            
-              <ul>
-                <li><a href="#">Mesas de informacion</a></li>
-                <li><a href="#">Consulados</a></li>
-                <li><a href="#">Escuelas</a></li>
-                <li><a href="#">Agencias  </a></li>  
-              </ul>
-         	 
-         <li><a href="#"><i class="icono izquierdo fa fa-address-book"></i>Pasar a Contactos</a></li>
-         
-     </ul>
-
-     </div>
-   </div>	
-
-   <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase.js"></script>
-
-   <script>
+<script src="https://www.gstatic.com/firebasejs/5.5.6/firebase.js"></script>
+<script>
   // Initialize Firebase
   var config = {
     apiKey: "AIzaSyAU8lvzdRC5QA_CzCaB2NdpSs8kWAOWRyQ",
@@ -131,9 +108,8 @@
   firebase.initializeApp(config);
 </script>
      
-     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-     <script src="main.js"></script>
-     <script src="scripts.js"></script>
-
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="main.js"></script>
+<script src="scripts.js"></script>
 </body>
 </html>
