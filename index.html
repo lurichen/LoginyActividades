@@ -4,8 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>MUA Actividades</title>
-  <link href="https://fonts.google.com" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="estilos.css">
 </head>
 <body>
@@ -22,7 +23,60 @@
   </div>
 </div>
 
-<div id="appActividades">
+<div id="actividadesSeleccion">
+  <h2><i class="fa fa-home"></i> MUA Actividades</h2>
+  <select class="" name="actividad" id="actividad">
+    <option value=""></option>
+    <optgroup data-icon="fa-coffee" label='Reuniones Generales'>
+      <option value="Reuniones:San Francisco">San Francisco</option>
+      <option value="Reuniones:Oakland">Oakland</option>
+      <option value="Reuniones:Union City">Union City</option>
+    </optgroup>
+    <optgroup data-icon="fa-comments" label='Comites'>
+      <option value="Comites:Raices">Raices</option>
+      <option value="Comites:Consejeras y Facilitadoras">Consejeras y Facilitadoras</option>
+      <option value="Comites:Asalto Sexual">Asalto Sexual</option>
+      <option value="Comites:Recaudacion">Recaudacion</option>
+    </optgroup>
+    <optgroup data-icon="fa-briefcase" label='Talleres'>
+      <option value="Talleres:Conozca sus Derechos">Conozca sus Derechos</option>
+      <option value="Talleres:Negociacion de Salario y Contratos TH">Negociacion de Salario y Contratos TH</option>
+      <option value="Talleres:Mitos y Realidades de AS">Mitos y Realidades de AS</option>
+      <option value="Talleres:Impacto de VD en los niños">Impacto de VD en los niños</option>
+      <option value="Talleres:Universidad MUA">Universidad MUA</option>
+      <option value="Talleres:Recaudacion de fondos">Recaudacion de fondos</option>
+    </optgroup>
+    <optgroup data-icon="fa-briefcase" label='Entrenamientos'>
+      <option value="Entrenamientos:Liderazgo">Liderazgo</option>
+      <option value="Entrenamientos:Consejeras de VD">Consejeras de VD</option>
+      <option value="Entrenamientos:Facilitadoras">Facilitadoras</option>
+      <option value="Entrenamientos:Consejeras de AS">Consejeras de AS</option>
+      <option value="Entrenamientos:Recaudacion de fondos">Recaudacion de fondos</option>
+    </optgroup>
+    <optgroup data-icon="fa-graduation-cap" label='Alcance'>
+      <option value="Alcance:Conozca sus Derechos">Conozca sus Derechos</option>
+      <option value="Alcance:Asalto Sexual">Asalto Sexual</option>
+      <option value="Alcance:Violencia Domestica">Violencia Domestica</option>
+      <option value="Alcance:Trabajadoras del Hogar">Trabajadoras del Hogar</option>
+      <option value="Alcance:Acceso Linguistico">Acceso Linguistico</option>
+    </optgroup>
+    <optgroup data-icon="fa-book" label='Clase de Ingles'>
+      <option value="Clase:San Francisco">San Francisco</option>
+      <option value="Clase:Oakland">Oakland</option>
+      <option value="Clase:Union City">Union City</option>
+    </optgroup>
+    <optgroup data-icon="fa-bullhorn" label='Presentaciones'>
+      <option value="Presentaciones:Mesas de informacion">Mesas de informacion</option>
+      <option value="Presentaciones:Consulados">Consulados</option>
+      <option value="Presentaciones:Escuelas">Escuelas</option>
+      <option value="Presentaciones:Agencias">Agencias</option>
+    </optgroup>
+  </select>
+  <button type="button" class="disabled" id="actividades-guardar" style="display: none;" disabled>Pasar a Contactos</button>
+  <br/><br/>
+</div>
+
+<div id="appActividades" style="display: none;">
   <div class="contenedor-menu">
     <a href="#" class="btn-menu">Menu<i class="icono fa fa-bars"></i></a>
     <ul class="menu">
@@ -33,7 +87,7 @@
         <li><a href="#">Oakland</a></li>
         <li><a href="#">Union City</a></li>
       </ul>
-      <li><a href="#"><i class=" icono izquierdo fa fa-comments aria-hidden true"></i>Comites</a><i class="icono derecho fa fa-chevron-down"></i></li>
+      <li><a href="#"><i class="icono izquierdo fa fa-comments aria-hidden true"></i>Comites</a><i class="icono derecho fa fa-chevron-down"></i></li>
       <ul>
         <li><a href="#">Raices</a></li>
         <li><a href="#">Consejeras y Facilitadoras</a></li>
@@ -53,7 +107,7 @@
       <ul>
         <li><a href="#">Liderazgo</a></li>
         <li><a href="#">Consejeras de VD</a></li>
-        <li><a href="#">facilitadoras</a></li>
+        <li><a href="#">Facilitadoras</a></li>
         <li><a href="#">Consejeras de AS</a></li>
         <li><a href="#">Recaudacion de fondos</a></li>
       </ul>
@@ -85,6 +139,7 @@
 
 <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 <script src="main.js"></script>
 <script src="scripts.js"></script>
 </body>
