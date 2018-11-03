@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  $('.menu li:has('ul')').click(function(e){
+  $(".menu li:has('ul')").click(function(e) {
     e.preventDefault();
 
     if ($(this).hasClass('activado')) {
@@ -22,8 +22,8 @@ $(document).ready(function(){
         $('.contenedor-menu .menu').css({'display' : 'block'});
       }
 
-      if ($(document).width() < 320) {
-        $('contenedor-menu .menu').css('display' : 'none'});
+      if($(document).width() < 320) {
+        $('contenedor-menu .menu').css({'display' : 'none'});
         $('.menu li ul').slideUp();
         $('.menu li').removeclass('activado');
       }
